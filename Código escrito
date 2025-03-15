@@ -1,0 +1,26 @@
+[Obj. único sem sprite, colocado na room]:
+
+  Evento Create: 
+
+alarme0 = 600
+alarme1 = 600
+
+
+  Evento Step:
+
+alarme0--
+
+if (alarme1 <= 0)
+{
+	alarme0= 600
+	alarme1 = 600
+}
+
+
+  Evento Draw:
+
+if (alarme0 <= 0)
+{
+	draw_text(x,y, "Essa mensagem vai aparecer e desaparacer a cada 10 segundos!")
+	alarme1--
+}
