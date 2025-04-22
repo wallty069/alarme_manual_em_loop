@@ -1,12 +1,9 @@
-[Obj. único sem sprite, colocado na room]:
-
-  Evento Create: 
+Create: 
 
 alarme0 = 600
 alarme1 = 600
 
-
-  Evento Step:
+Step:
 
 alarme0--
 
@@ -16,8 +13,7 @@ if (alarme1 <= 0)
 	alarme1 = 600
 }
 
-
-  Evento Draw:
+Draw:
 
 if (alarme0 <= 0)
 {
